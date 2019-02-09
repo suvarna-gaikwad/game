@@ -1,1 +1,4 @@
-<app-game-control></app-game-control>
+<app-game-control (gameStartedEvent)="gameStarted($event)"></app-game-control>
+<hr>
+<app-odd *ngFor="let oddNumber of oddNumbers" [oddCount]="oddNumber"></app-odd>
+<app-even *ngFor="let evenNumber of evenNumbers" [evenCount]="evenNumber"></app-even>

@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'game';
+  evenNumbers: number[] = [];
+  oddNumbers: number[] = [];
+
+  gameStarted(lastCounter : number){
+    //console.log(lastCounter);
+    if(lastCounter % 2 === 0){
+      //even number
+      this.evenNumbers.push(lastCounter);
+    }
+    else {
+      //odd number
+      this.oddNumbers.push(lastCounter);
+    }
+  }
 }
